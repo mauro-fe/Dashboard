@@ -60,7 +60,7 @@ main>figure {
 
 }
 
-main>*.teste {
+main>*.imagens {
   grid-column: span 1;
 }
 
@@ -76,7 +76,7 @@ main .summary {
 
 .summary article {
   padding: var(--middle-padding) 0;
-  ;
+
 }
 
 .summary_separated {
@@ -195,4 +195,79 @@ main .summary {
   font-weight: 500;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--black), transparent 60%);
+}
+
+.teste {
+  grid-column: 2 / -1;
+  background-color: #eee;
+  padding: var(--default-padding);
+
+}
+
+.footer {
+  color: #fff;
+  background-color: #004eda99;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_title {
+  padding-bottom: 1em;
+  font-size: 1.8em;
+}
+
+fieldset {
+  padding: 3em;
+  border-color: #000;
+  background-color: #004eda66;
+  border-radius: 10px;
+}
+
+.footer_form .teste1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  width: 50em;
+}
+
+.footer_form label {
+  font-size: 1.4em;
+}
+
+input,
+textarea {
+  display: inline-block;
+  width: 100%;
+  padding: .7em 0;
+  padding-left: .5em;
+  border-radius: 5px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 1.2em;
+}
+
+.teste1_teste2 {
+  flex: 1 1 auto;
+  width: 50%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  gap: 5em;
+}
+
+.buttons button {
+  padding: .4em 1.2em;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  color: var(--grey);
+  font-size: 1.2em;
 }
