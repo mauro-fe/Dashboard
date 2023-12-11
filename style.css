@@ -100,6 +100,10 @@ main .summary {
   border-radius: 5px;
 }
 
+.btn:hover {
+  background-color: hsl(219, 100%, 33%);
+}
+
 .summary_btn {
   align-self: stretch;
   display: flex;
@@ -145,6 +149,13 @@ main .summary {
 .topnav_menu a {
   text-decoration: none;
   color: var(--color-text);
+}
+
+.mainNav_menu a:hover,
+.topnav_menu a:hover {
+  outline: 2px solid var(--color-text);
+  outline-offset: 5px;
+  border-radius: .1px;
 }
 
 .mainNav_menu svg,
@@ -216,6 +227,10 @@ main .summary {
 .footer_title {
   padding-bottom: 1em;
   font-size: 1.8em;
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 2em;
+  text-shadow: 2px 2px 8px #fff;
 }
 
 fieldset {
@@ -223,9 +238,10 @@ fieldset {
   border-color: #000;
   background-color: #004eda66;
   border-radius: 10px;
+  box-shadow: 0px 3px 10px #000;
 }
 
-.footer_form .teste1 {
+.form_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -245,6 +261,8 @@ textarea {
   padding: .7em 0;
   padding-left: .5em;
   border-radius: 5px;
+  border: none;
+  margin-bottom: 1em;
 }
 
 input::placeholder,
@@ -252,7 +270,18 @@ textarea::placeholder {
   font-size: 1.2em;
 }
 
-.teste1_teste2 {
+input:focus:invalid,
+textarea:focus:invalid {
+  outline: 3px solid hsl(0, 70%, 70%);
+}
+
+input:focus:valid,
+textarea:focus:valid {
+  outline: 3px solid hsl(219, 100%, 83%);
+
+}
+
+.form_content-text {
   flex: 1 1 auto;
   width: 50%;
 }
@@ -264,10 +293,6 @@ textarea::placeholder {
   gap: 5em;
 }
 
-.buttons button {
-  padding: .4em 1.2em;
-  border-radius: 15px;
-  background-color: var(--primary-color);
-  color: var(--grey);
-  font-size: 1.2em;
+.form_btn {
+  padding: 1em 2em;
 }
