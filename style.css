@@ -195,6 +195,10 @@ main .summary {
   height: 100%;
 }
 
+.perfil_thumb img {
+  border-radius: 50%;
+}
+
 .perfil_name {
   font-size: .8rem;
   font-weight: 600;
